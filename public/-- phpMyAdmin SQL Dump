@@ -1,0 +1,63 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.4.1deb2ubuntu2
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Авг 27 2018 г., 23:32
+-- Версия сервера: 5.7.23-0ubuntu0.16.04.1
+-- Версия PHP: 7.0.30-0ubuntu0.16.04.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `test_api`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `strings`
+--
+
+CREATE TABLE `strings` (
+  `id` int(11) NOT NULL,
+  `string` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Дамп данных таблицы `strings`
+--
+
+INSERT INTO `strings` (`id`, `string`) VALUES
+(1, 'the first strung'),
+(2, 'the second string'),
+(3, 'Sunset44dfd Boulevard'),
+(5, 'this is updated string'),
+(8, 'test'),
+(13, 'theNEXTstring'),
+(15, 'Sunset Boulevard new try'),
+(16, 'Sunset Boulevard new try'),
+(17, 'Sunset Boulevard new try'),
+(18, 'The last test'),
+(19, 'The last test 2');
+
+--
+-- Индексы сохранённых таблиц
+--
+
+--
+-- Индексы таблицы `strings`
+--
+ALTER TABLE `strings`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT для сохранённых таблиц
+--
+
+--
+-- AUTO_INCREMENT для таблицы `strings`
+--
+ALTER TABLE `strings`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
